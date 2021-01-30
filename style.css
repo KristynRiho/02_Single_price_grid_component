@@ -1,10 +1,130 @@
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color:hsl(204, 43%, 93%)
+}
+
+.container {
+    width: 50%;
+    border-radius: 7px;
+    font-family:'Karla', sans-serif;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px hsl(218, 22%, 67%) ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* *** HEADER *** */
+.intro {
+    padding: 35px 55px 35px 45px;
+    background-color: white;
+    
+}
+
+.intro__title {
+    color: hsl(179, 62%, 43%);
+    margin: 5px 0;
+}
+
+.intro__subtitle {
+    color:hsl(71, 73%, 54%);
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.intro__text {
+    color:hsl(218, 22%, 67%) ;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    
+}
+
+/* *** MAIN *** */
+.cols {
+    width: 100%;
+    min-height: 230px;
+    border-radius: 0 0 7px 7px;
+    color: white;
+    background-color:hsl(179, 62%, 43%);
+    
+
+}
+
+.col--first {
+    width: 48%;
+    float: left;
+}
+
+.col--second {
+    width: 48%;
+    float: right;
+   opacity: 0.8;
+    padding-bottom: 5%;
+    background-color: hsl(179, 49%, 51%);
+}
+.col__list-item {
+    padding-left: 45px;
+    }
+    
+.col__list {
+    list-style-type: none;
+    }
+
+.col__title {
+    padding: 20px 45px;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    opacity: 0.95;
+    font-weight: 500;
+}
+
+.col__list-item--price-month{
+    padding-bottom: 10px;
+}
+
+.col__list-item--price{
+    font-size: 36px;
+}
+
+.col__list-item--month{
+    display: inline-block;
+    opacity: 0.5;
+    position: relative;
+    left: 10px;
+    bottom: 8px;
+}
+
+.col_first_btn{
+    width: 70%;
+    margin: 25px 0px 25px 45px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px;
+    border: none;
+    letter-spacing: 0.8px;
+}
 
 
 
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+
+.clearfix ::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.attribution { font-size: 11px; position: absolute; top: 100% ; left: 50%; transform: translateX(-50%);}
+.attribution a { color: hsl(228, 45%, 44%); }
